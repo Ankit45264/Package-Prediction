@@ -18,4 +18,4 @@ cgpa = st.text_input("Enter your Cgpa")
 if st.button("Predict"):
     features = np.array([[cgpa]],dtype=np.float64)
     results = data.predict(features)
-    st.write(f"Predicted Package ---> {results[0]:.3f} LPA")
+    st.write(f"Predicted Package ---> {results[0]:.2f} LPA")
